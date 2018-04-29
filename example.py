@@ -10,7 +10,7 @@ print('Requested phone number is +' + str(number))
 #loop until an sms received
 print('Waiting code...')
 sms = api.get_sms(number, 10, 'cn')
-while sms == False:
+while not sms:
     time.sleep(5)
     sms = api.get_sms(number, 10, 'cn')
 #print the received sms
