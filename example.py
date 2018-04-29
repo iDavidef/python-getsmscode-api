@@ -1,7 +1,7 @@
 import getsmscode
 import time
 
-api = getsmscode.getsmscode('your_username', 'your token') #username = email, token can be found on the homepage @ getsmscode.com
+api = getsmscode.getsmscode('your_username', 'your_token') #username = email, token can be found on the homepage @ getsmscode.com
 print('My balance is: ' + str(api.get_balance())) #print balance
 
 #get a chinese (+86) number for Telegram
